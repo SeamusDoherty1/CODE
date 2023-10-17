@@ -4,6 +4,7 @@ public class App {
         int repeatOne = 0;
         int avgNum = 0;
         int iNum = 0;
+        int greatestNum = 0;
         for(int i = 1; i <= 200; i = i + 1 ){
             iNum = i;
             while(repeatOne < 2){
@@ -21,10 +22,12 @@ public class App {
             }
             if(avgNum < num){
                 avgNum = num;
+                greatestNum = i;
             }
             num = 0;
             repeatOne = 0;
         }
         System.out.println("the Max iterations is: " + avgNum);
+        System.out.println("the number at the max is " + greatestNum);
     }
 }

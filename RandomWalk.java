@@ -23,7 +23,7 @@ public class RandomWalk {
             steps = 0;
         }
         avg = avg / 50;
-        System.out.println("The average amount of steps is " + avg);
+        System.out.println("The average amount of steps is " + (int)avg);
         System.out.println("The greatest amount of steps is " + greatestAmount);
 
     }
